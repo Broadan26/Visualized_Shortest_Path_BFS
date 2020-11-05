@@ -1,8 +1,15 @@
 # Visualized Shortest Path BFS
 
 ## Dependencies
+--------------------------
 Python 3 or newer
 Pygame 1.9.6 or newer
+
+## Example Images
+---------------------------
+![Example 1](https://github.com/Broadan26/Visualized_Shortest_Path_BFS/blob/main/Images/shortest_path_1.PNG)
+
+![Example 2](https://github.com/Broadan26/Visualized_Shortest_Path_BFS/blob/main/Images/shortest_path_2.PNG)
 
 ## LIST OF CONTROLS
 ----------------------------
