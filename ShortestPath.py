@@ -1,4 +1,5 @@
 import pygame
+import time
 import collections
 
 '''
@@ -62,6 +63,10 @@ def Shortest_Path(start):
                 queue.append(path + [(x2, y2)])
                 GRID[x2][y2] = 3
                 seen.add((x2, y2))
+                #Show the user how it's working
+                Draw_Grid()
+                pygame.time.delay(10)
+                pygame.display.update()            
 
 def Create_Grid():
     '''
