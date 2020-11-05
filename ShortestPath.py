@@ -16,8 +16,8 @@ Spacebar: Resets the board state
 #Game Configurations
 pygame.init()
 pygame.display.set_caption("Shortest Path Finder")
-WINDOW_HEIGHT = 600
-WINDOW_WIDTH = 600
+WINDOW_HEIGHT = 750
+WINDOW_WIDTH = 750
 SCREEN = pygame.display.set_mode((WINDOW_HEIGHT, WINDOW_WIDTH))
 CLOCK = pygame.time.Clock()
 
@@ -35,7 +35,7 @@ RED = (200,0,0)
 BLUE = (0,0,128)
 
 #Grid Information
-BLOCK_SIZE = 30
+BLOCK_SIZE = 25
 BLOCKS_X = WINDOW_WIDTH//BLOCK_SIZE
 BLOCKS_Y = WINDOW_HEIGHT//BLOCK_SIZE
 GRID = []
@@ -142,7 +142,7 @@ if __name__ == "__main__":
     while True:
         Draw_Grid()
         for event in pygame.event.get():
-            #Clicking Quit on Window
+            #Clicking Quit on Window (Quit)
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
@@ -152,6 +152,7 @@ if __name__ == "__main__":
                 GRID = []
                 Create_Grid()
                 start = (0, 0)
+                GRID[0][0] = 4
 
             #R Button Pressed (Calculates Shortest Path)
             if event.type == pygame.KEYDOWN and event.key == pygame.K_r:
